@@ -27,3 +27,4 @@ kebab-case
 `const this-is-not-allowed-in-javascript = true;`
 
 **Lesson 05: Code Quality Tooling with Prettier and ESLint**
+---
