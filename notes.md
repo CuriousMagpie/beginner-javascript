@@ -7,18 +7,16 @@ Differences between variable types:
 - `var` and `let` can be changed within the code, like:
   - `var = 'first';`
   - `let first = 'hello';`
-  - `const age = 25;`  
+  - `const age = 25;`
 
 
-- `const` cannot be changed at all, so:
-  - `cool = false;`  
-  will not work!
+- `const` cannot be changed at all, so: `cool = false;` will not work!
 
 `var` variables are scoped differently than `let` and `const` variables.
 - `var` is a _function scoped variable_
 - `let` and `const` are _block scoped variables_ i.e., they use {}
 
-- use `const` by default and `let` when needed  
+- use `const` by default and `let` when needed
 
 
 Different Cases:
