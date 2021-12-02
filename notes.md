@@ -43,9 +43,39 @@ Lots of time spent in this lesson on how to set up VS Code, so if you use that, 
 
 Any time you have a value, it has to be one of seven types (data types?):
 
-- string: text enclosed in quotation marks, single quotes, or backticks
+- string: text enclosed in single quotes, double quotes, or backticks
 - number: a number, with or without decimal places
 - object: everything in JS is an object--functions, arrays, dates are some examples
 - Boolean: true/false
 - null and unidentified: two different ways of saying nothing
 - symbol: a guaranteed unique identifier
+
+## Lesson 07: Strings
+
+/_ eslint-disable _/ -- disables eslint
+
+Strings hold text information. You can use the following to denote a string in javascript:
+
+- single quotes
+- double quotes
+- backticks
+
+_Single_ and _double quotes_ are essentially the same. You can nest them inside one another. It's a good idea to pick one and stick with it unless you're doing something like `const sentence = "she's the \"best.\""` You have to escape the second set of double quotes with a backslash (\) which can get annoying.
+
+_Backticks_ can go outside single/double quotes and are in some ways more versatile. You can use them if your string has line breaks in it without needing to escape the line break.
+
+_Concatenation_ is 2 ore more strings combined into one:
+
+```
+const name = 'Inigo Montoya'
+const hello = 'Hello, my name is' + name + '. Prepare to die.'
+```
+
+_Interpolation_ is a variable inside a string:
+
+```
+const name = 'Inigo Montoya'
+const hello = `Hello, my name is ${name}. Prepare to die.`
+```
+
+You can only use the `${variable}` syntax inside backticks.
