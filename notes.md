@@ -52,7 +52,7 @@ Any time you have a value, it has to be one of seven types (data types?):
 
 ## Lesson 07: Strings
 
-/_ eslint-disable _/ -- disables eslint
+`/* eslint-disable */` -- disables eslint
 
 Strings hold text information. You can use the following to denote a string in javascript:
 
