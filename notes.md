@@ -79,3 +79,35 @@ const hello = `Hello, my name is ${name}. Prepare to die.`
 ```
 
 You can only use the `${variable}` syntax inside backticks.
+
+## Lesson 08: Numbers
+
+_Integers_ are whole numbers and _floats_ have decimal places.
+
+Mathematical operands are available: exponents (`**`), multiplication (`*`), division (`/`), addition (`+`), and subtraction (`-`). Order of operations is PEMDAS.
+
+There are helper methods that can be used for math. Most common are:
+
+- `Math.round()`: rounds 20.2 to 20
+- `Math.floor()`: floor of 20.2 is 20
+- `Math.ceil()`: ceiling of 20.9 is 21
+- `Math.random()`: generates a random number between 0 and 1
+
+The modulo operand (`%`) gives a remainder.
+
+```
+const candyPieces = 20;
+const kids = 3;
+const eachKidGets = Math.floor(candyPieces / kids);
+const parentGets = candyPieces % kids;
+console.log(`Kids get ${eachKidGets} pieces of candy. The parent gets ${parentGets} pieces.`)
+
+returns:
+Kids get 6 pieces of candy. The parent gets 2 pieces.
+```
+
+FLoating point math is a thing.
+
+Because of floating point math, don't store money as dollars and cents, instead store it as whole integers and then divide by 100 and round to two decimal places. (_Note:_ I am not convinced about this; this is fine for a store website but if you're doing anything with millions of dollars then this could cause a problem, but then again you need to track to the dollar at least for that because otherwise you'll get a propogation of error if you round too too much. This comes from my many years of experience as a finance-adjacent data analyst.)
+
+`Infinity` and `-Infinity` are considered numbers, as is `NaN`, or Not A Number.
