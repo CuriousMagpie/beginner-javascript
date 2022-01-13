@@ -111,3 +111,59 @@ FLoating point math is a thing.
 Because of floating point math, don't store money as dollars and cents, instead store it as whole integers and then divide by 100 and round to two decimal places. (_Note:_ I am not convinced about this; this is fine for a store website but if you're doing anything with millions of dollars then this could cause a problem, but then again you need to track to the dollar at least for that because otherwise you'll get a propogation of error if you round too too much. This comes from my many years of experience as a finance-adjacent data analyst.)
 
 `Infinity` and `-Infinity` are considered numbers, as is `NaN`, or Not A Number.
+
+## Lesson 09: Objects and Symbols
+
+Everything in javascript is an _object_. Objects are, at their base, collections of data and/or functionality.
+
+```
+const person = {
+  // use property: value pairs
+  first: 'Jane',
+  last: 'Smith',
+  age: 40,
+  };
+
+console.log(person.first);
+console.log(person); // note that the order of the property: value pairs doesn't matter
+```
+
+_Symbols_ are another data type and are specifically a way to create a unique identifier. They aren't discussed in the course, but [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) has a reasonably technical explanation.
+
+## Lesson 09: Undefined and Null
+
+Both _undefined_ and _null_ are both nothing, but nothing in different ways.
+
+Undefined is when a variable is created with `let` and is not defined. Null is explicitly set to `null`. Compare:
+
+```
+let somethingUndefined;
+const somethingNull = null;
+
+console.log(somethingUndefined);
+console.log(somethingNull);
+```
+
+And here's a more interesting set of examples:
+
+```
+const cher = {
+  first: 'cher',
+};
+
+console.log(cher);
+console.log(cher.last);
+
+// run the first part of this next section before you change the values of first and last
+
+const teller = {
+  first: 'Raymond',
+  last: 'Teller',
+};
+console.log(teller);
+
+teller.first = 'Teller';
+teller.last = null;
+
+console.log(teller);
+```
