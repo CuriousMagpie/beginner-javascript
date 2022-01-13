@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/CuriousMagpie/beginner-javascript/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/CuriousMagpie/beginner-javascript#readme"
+=======
+  "homepage": "https://github.com/wesbos/beginner-javascript#readme"
+>>>>>>> upstream/master
 }
