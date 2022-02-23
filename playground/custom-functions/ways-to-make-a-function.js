@@ -1,52 +1,51 @@
-//
-//  function doctorize(firstName) {
-//    return `Dr. ${firstName}`;
-//  }
-//
-//  //anonymous function - one w/o a name
-//  function (firstName) {
-//    return `Dr. ${firstName}`;
-//  }
-//
-// //function expression
-// const firstName = "Natalie";
-// const doctorizeTwo = function (firstName) {
-//   return `Dr. ${firstName}`;
-// }
-// console.log(firstName);
-//
-// //arrow function
-// const inchToCm = (inches) => inches * 2.54;
-// const add = (a, b = 3) => a + b;
-//
-// // returning an object
-// function makeABaby(first, last) {
-//   const baby = {
-//     name: `${first} ${last}`,
-//     age: 0,
-//   }
-//   return baby;
-// }
-//
-// // arrow function that returns an object -- this is a little hard to read, tbh
-// const makeABaby2 = (first, last) => ({ name: `${first} ${last}`, age: 0, });
-//
-// // IIFE
-// // Immediately Invoked Function Expression
-//
-// (function() {
-//   console.log('Running the Anon function');
-//   return 'You are cool';
-// }());
+ function doctorize(firstName) {
+   return `Dr. ${firstName}`;
+ }
+
+ //anonymous function - one w/o a name
+ function (firstName) {
+   return `Dr. ${firstName}`;
+ }
+
+//function expression
+const firstName = "Natalie";
+const doctorizeTwo = function (firstName) {
+  return `Dr. ${firstName}`;
+}
+console.log(firstName);
+
+//arrow function
+const inchToCm = (inches) => inches * 2.54;
+const add = (a, b = 3) => a + b;
+
+// returning an object
+function makeABaby(first, last) {
+  const baby = {
+    name: `${first} ${last}`,
+    age: 0,
+  }
+  return baby;
+}
+
+// arrow function that returns an object -- this is a little hard to read, tbh
+const makeABaby2 = (first, last) => ({ name: `${first} ${last}`, age: 0, });
+
+// IIFE
+// Immediately Invoked Function Expression
+
+(function() {
+  console.log('Running the Anon function');
+  return 'You are cool';
+}());
 
 // Methods
 const natalie = {
   name: 'natalie',
   // method
-  // sayHi: function() {
-  //   console.log(`Hey ${this.name}`);
-  //   return this.name;
-  // },
+  sayHi: function() {
+    console.log(`Hey ${this.name}`);
+    return this.name;
+  },
 
   // short hand way to put a method in an object
   yellHi() {
@@ -54,7 +53,7 @@ const natalie = {
   },
 
   // arrow function
-  // whisperHi: () => {console.log('hi natalie, i am a mouse');},
+  whisperHi: () => {console.log('hi natalie, i am a mouse');},
 
 }
 
