@@ -18,7 +18,7 @@
 // pizzaList.insertAdjacentText('afterbegin', '🍕');
 // pizzaList.insertAdjacentText('beforeend', '🍕');
 
-//classes
+// classes
 const pic = document.querySelector('.nice');
 pic.classList.add('open');
 // pic.classList.remove('cool');
@@ -30,3 +30,20 @@ function toggleRound() {
 }
 
 pic.addEventListener('click', toggleRound);
+
+pic.alt = 'cute pic'; // setter
+console.log(pic.alt); // getter
+pic.width = 200;
+
+// console.log(pic.naturalWidth); // getter
+//
+// pic.addEventListener('load', () => {
+//   console.log(pic.naturalWidth);
+// });
+
+const custom = document.querySelector('.custom');
+console.log(custom.dataset);
+
+custom.addEventListener('click', () => {
+  alert(`Welcome ${custom.dataset.name} ${custom.dataset.last}`);
+});

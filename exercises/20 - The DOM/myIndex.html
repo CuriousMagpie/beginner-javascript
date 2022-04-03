@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>The DOM</title>
   <link rel="stylesheet" href="../../base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <img class="nice cool" src="https://source.unsplash.com/random/600x600" />
-  <div class="items">
+  <div class="item">
     <p>Hi I'm a item</p>
     <div>
       <h2>
@@ -19,7 +21,10 @@
       </h2>
       <p>Hi I'm a item</p>
     </div>
-      <img src="https://source.unsplash.com/random/200x200" />
+      <img class="custom" data-name="natalie" data-last="luhrs" src="https://source.unsplash.com/random/200x200" />
+      <img data-name="paul" src="https://source.unsplash.com/random/200x200" />
+      <img data-name="miles" src="https://source.unsplash.com/random/200x200" />
+      <img data-name="ivan" src="https://source.unsplash.com/random/200x200" />
       <p>Hi I'm a item</p>
     </div>
     <article>
@@ -48,7 +53,7 @@
       box-shadow: 0 0 10px black;
     }
   </style>
-  <script src="./myTheDom.js"></script>
+  <script src="./myCreatingWithStrings.js"></script>
 </body>
 
 </html>
