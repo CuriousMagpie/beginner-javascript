@@ -3,7 +3,8 @@ const item = document.querySelector('.item');
 
 const size = `300x300`;
 const src = `https://source.unsplash.com/random/${size}`;
-const desc = `Cute <img onload="alert('HACKED')" src="https://source.unsplash.com/random/50x50">`; // example of XSS
+const desc = `Cute!`
+// `Cute <img onload="alert('HACKED')" src="https://source.unsplash.com/random/50x50">`; // example of XSS
 const myHTML = `
   <div class = "wrapper">
     <h2>${desc}!</h2>
