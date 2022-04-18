@@ -1,21 +1,34 @@
 // Make a div
-
 // add a class of wrapper to it
-
 // put it into the body
-
 // make an unordered list
-
 // add three list items with the words "one, two, three" in them
 // put that list into the above wrapper
+const div = document.createElement('div');
+div.classList.add('wrapper');
+document.body.appendChild(div);
+const ul = `<ul>
+  <li>one</li>
+  <li>two</li>
+  <li>three</li>
+</ul>
+`
+div.innerHTML = ul;
 
 // create an image
-
 // set the source to an image
 // set the width to 250
 // add a class of cute
 // add an alt of Cute Puppy
 // Append that image to the wrapper
+
+const img = document.createElement('img');
+img.src = 'https://picsum.photos/500';
+img.width = 250;
+img.classList.add('cute');
+img.alt = 'cute!';
+div.appendChild(img)
+
 
 // with HTML string, make a div, with two paragraphs inside of it
 // put this div before the unordered list from above
